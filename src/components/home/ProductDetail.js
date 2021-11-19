@@ -5,7 +5,7 @@ import Layout from '../Layout';
 import { getProductDetails } from '../../api/apiProduct';
 import { addToCart } from '../../api/apiOrder';
 import { isAuthenticated, userInfo } from '../../utils/auth';
-import { API } from './../../utils/config';
+// import { API } from './../../utils/config';
 
 
 const ProductDetail = (props) => {
@@ -47,7 +47,7 @@ const ProductDetail = (props) => {
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb container">
                     <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                    <li class="breadcrumb-item"><a href="#">Product</a></li>
+                    <li class="breadcrumb-item"><a href=" ">Product</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{product.category ? product.category.name : ""}</li>
                 </ol>
             </nav>

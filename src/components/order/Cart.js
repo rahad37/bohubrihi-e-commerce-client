@@ -69,7 +69,7 @@ const Cart = () => {
                 <table className="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col" width='15%'>#</th>
+                            <th scope="col" width='10%'>#</th>
                             <th scope="col">Image</th>
                             <th scope="col">Product Name</th>
                             <th scope="col">Quantity</th>
@@ -82,7 +82,7 @@ const Cart = () => {
                         <tr>
                             <th scope="row" />
                             <td colSpan={3}>Total</td>
-                            <td align="right">৳ {getCartTotal()}</td>
+                            <td>৳{getCartTotal()}</td>
                             <td />
                         </tr>
                         <tr>
