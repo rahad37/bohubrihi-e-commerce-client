@@ -58,7 +58,7 @@ const ProductDetail = (props) => {
             <div className="row container">
                 <div className="col-6">
                     <img
-                        src={`${API}/product/photo/${product._id}`}
+                        src={`https://bohubrihi-e-commerce.herokuapp.com/product/photo/${product._id}`}
                         alt={product.name}
                         width="100%"
                     />
