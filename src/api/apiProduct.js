@@ -2,15 +2,15 @@ import axios from 'axios';
 import { API } from '../utils/config';
 
 export const getProducts = (sortBy, order, limit) => {
-    return axios.get(`https://bohubrihi-e-commerce.herokuapp.com/product?sortBy=${sortBy}&order=${order}&limit=${limit}`);
+    return axios.get(`https://bohubrihi-e-commerce1.herokuapp.com/product?sortBy=${sortBy}&order=${order}&limit=${limit}`);
 }
 
 export const getProductDetails = (id) => {
-    return axios.get(`https://bohubrihi-e-commerce.herokuapp.com/product/${id}`);
+    return axios.get(`https://bohubrihi-e-commerce1.herokuapp.com/product/${id}`);
 }
 
 export const getCategories = () => {
-    return axios.get(`https://bohubrihi-e-commerce.herokuapp.com/category`)
+    return axios.get(`https://bohubrihi-e-commerce1.herokuapp.com/category`)
 }
 
 
