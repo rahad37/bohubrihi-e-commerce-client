@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import {showError, showSuccess} from '../../utils/messages';
-import {API} from '../../utils/config';
 import {Link} from 'react-router-dom';
 import Layout from '../Layout';
 import { getProductDetails } from '../../api/apiProduct';
 import { addToCart } from '../../api/apiOrder';
 import { isAuthenticated, userInfo } from '../../utils/auth';
+import { API } from './../../utils/config';
 
 
 const ProductDetail = (props) => {
