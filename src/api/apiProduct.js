@@ -1,5 +1,5 @@
-import { API } from '../utils/config';
 import axios from 'axios';
+import { API } from './../utils/config';
 
 export const getProducts = (sortBy, order, limit) => {
     return axios.get(`${API}/product?sortBy=${sortBy}&order=${order}&limit=${limit}`);
