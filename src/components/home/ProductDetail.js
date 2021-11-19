@@ -5,7 +5,7 @@ import Layout from '../Layout';
 import { getProductDetails } from '../../api/apiProduct';
 import { addToCart } from '../../api/apiOrder';
 import { isAuthenticated, userInfo } from '../../utils/auth';
-// import { API } from './../../utils/config';
+import { API } from '../../utils/config';
 
 
 const ProductDetail = (props) => {
@@ -58,7 +58,7 @@ const ProductDetail = (props) => {
             <div className="row container">
                 <div className="col-6">
                     <img
-                        src={`https://bohubrihi-e-commerce.herokuapp.com/product/photo/${product._id}`}
+                        src={`${API}/product/photo/${product._id}`}
                         alt={product.name}
                         width="100%"
                     />

@@ -6,7 +6,7 @@ const CartItem = (props) => {
     return (
         <tr>
             <th scope="row">{serial}</th>
-            <th><img src={`https://bohubrihi-e-commerce.herokuapp.com/product/photo/${item.product._id}`} style={{width: "8%"}} alt=''/></th>
+            <th><img src={`${API}/product/photo/${item.product._id}`} style={{width: "8%"}} alt=''/></th>
             <td style={{width: "15%"}}>{props.item.product.name}</td>
             <td style={{width: "10%"}}>
                 <button className="btn btn-outline-primary btn-sm" onClick={decreaseItem}>-</button>
